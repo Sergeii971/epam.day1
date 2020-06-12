@@ -1,6 +1,7 @@
 package com.verbovskiy.day1.validator;
 
 public class ArithmeticValidator {
+    public static final int COUNT_OF_NUMBERS_BY_CONDITION = 4;
 
     public boolean isInt(String number) throws NumberFormatException {
         try {
@@ -23,7 +24,7 @@ public class ArithmeticValidator {
     public boolean validateNumberCount(int ... numbers) {
         boolean result = true;
 
-        if (numbers.length != 4) {
+        if (numbers.length != COUNT_OF_NUMBERS_BY_CONDITION) {
             result = false;
         }
         return result;
