@@ -38,7 +38,7 @@ public class DotService {
     }
 
     public Map<Double, Double> calculateTangentFunction(double minimumValue, double maximumValue,
-                                       double argumentStep) throws  TaskException {
+                                                        double argumentStep) throws  TaskException {
        DotValidator dotValidator = new DotValidator();
 
         if (minimumValue > maximumValue) {
